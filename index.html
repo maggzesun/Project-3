@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gold Data-letes</title>
+  <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Jumbotron -->
+    <div class="row">
+      <div class="col-md-12 jumbotron">
+    
+        <h1 class="h1">Landing Page</h1>
+      </div>
+    </div>
+    <!-- Intro -->
+    <div class="row">
+      <h2 class="title display-5">Project Title</h2>
+      <hr>
+      <!-- Intro words -->
+      <div class="col-md-6">
+        <div class="single-post-content-wrapper p-3">
+            <br>
+          <p id = "intro"></p>
+          <br>
+          
+          <br>
+          <p id = "observation"></p>
+          <br>
+      
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-6">
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- Dashboard -->
+    <div class="row">
+      <h2 class="title display-5">Dashboard</h2>
+      <hr>
+      <!-- Menu and Demographics -->
+      <div class="col-md-2 dashboardrow1">
+        <div class="well menustyle">
+          <h6 class="menutitle">Male / Female Drop Down?</h6>
+          <select id="selDataset" class="dropdown"></select>
+        </div>
+        <div class="panel panel-primary panelstyle">
+          <div class="panel-heading">
+            <h5 class="panel-title">Visuals?</h5>
+          </div>
+          <div id="sample-metadata" class="panel-body" width="500"></div>
+        </div>
+      </div>
+      
+      <div class="col-md-10 dashboardrow1">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div id="bar_stacked" class="chartbox">
+          <canvas id="myjsChart" width="500" height="500"></canvas>
+            <script id="myChart"></script>
+          <canvas id="myFemaleChart" width="500" height="500"></canvas>
+            <script id="myChart"></script>
+          <canvas id="myMaleChart" width="500" height="500"></canvas>
+            <script id="myChart"></script>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Scatter Plot -->
+      <div class="col-md-7 dashboardrow2">
+        <div id="scatter_lobf"></div>
+      </div>
+      <!-- Visual -->
+      <div class="col-md-5 dashboardrow2">
+        <br>
+        <div id="gauge" class="gaugebox"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footerstyle">Gold Data-letes - Ga Tech Data Science 2021<a class="footcolor"> </footer>
+
+   <!--<script src="https://d3js.org/d3.v7.min.js"></script>-->
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    
+</body>
+
+</html>
